@@ -31,7 +31,7 @@
                     </thead>
 
                     <tbody>
-                        <tr *ngFor='let product of products'>
+                        <tr *ngFor='let product of products | productFilter: listFilter'>
                             <td>
                                 <img [src]='product.imageUrl' [title]='product.productName | uppercase' [style.width.px]='imageWidth' [style.margin.px]='imageMargin'
                                     *ngIf='showImage'>
