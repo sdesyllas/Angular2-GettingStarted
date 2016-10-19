@@ -1,9 +1,11 @@
 import { Component } from '@angular/core'
 import { ProductListComponent } from './products/product-list.component';
+import { ProductService } from './products/product-service';
 
 @Component({
     selector: 'pm-app',
-    templateUrl: 'app/app.component.html'
+    templateUrl: 'app/app.component.html',
+    providers: [ ProductService ]
 })
 
 export class AppComponent { 
